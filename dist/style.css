@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+html,
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d8e2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 20px 0px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 5rem;
+}
+
+/* MAIN */
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    height: 100%;
+}
+
+.grid {
+    margin: 20px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    border: 1px black solid;
+    width: 500px;
+    height: 500px;
+    min-width: 450px;
+    min-height: 450px;
+}
+
+.myShip {
+    background-color: #42C73D;
+}
+
+.ai-grid {
+    display: none;
+}
+
+.coordinate {
+    border: 1px black solid;
+}
+
+.ai-grid .coordinate:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.miss {
+    background-color: #4a1af7;
+}
+
+.hit,
+.sunk {
+    background-color: #f71a1a;
+}
+
+.ship {
+    margin-bottom: 10px;
+}
+
+.square {
+    background-color: #42C73D;
+    border: 1px black solid;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer img {
+    width: 25px;
+    height: auto;
+    margin-left: 5px;
+}
+
+footer a {
+    color: black;
+}
