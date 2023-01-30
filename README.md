@@ -10,6 +10,7 @@ This is a simple implementation of the classic Battleship game, written in JavaS
 ```
 git clone https://github.com/BrokenDetector/Battleship.git
 cd battleship
+npm install
 ```
 Open index.html in your browser
 
